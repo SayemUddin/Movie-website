@@ -1,0 +1,77 @@
+.caro-1-bg{
+    background-color: #dadbda;
+}
+
+.carousal-half{
+    width: 690px;
+    height: 465px;
+}
+.caro-2-bg{
+    background-color: #1a1a1b;
+}
+.caro-3-bg{
+    background-color: white;
+}
+
+.caro-1-text-color{
+    color: #191d24;
+}
+
+.card-body{
+    background-color: #333533;
+    color: rgb(236, 223, 223);
+}
+.card-body:hover{
+    color: rgb(154, 219, 63);
+}
+
+.card-height{
+    height: 425px;
+}
+
+.card-img{
+    width: 266px;
+    height: 150px;
+}
+.cart{
+    background-color: #939793;
+    color: #0d0d0e;
+    border-radius: 45px;
+    height: 440px;
+}
+.cart-icon{
+    margin-top: 15px;
+}
+.btn:hover{
+    color:red;
+    box-shadow:#dadbda;
+}
+.upcoming-card-height{
+    height: 500px;
+    border-radius: 20px;
+}
+.review{
+    width: 400px;
+    height: 100%;
+    
+}
+.review-img{
+    width: 395px;
+    height: 265px;
+    border-radius: 55%;
+}
+.input{
+    width: 400px;
+}
+
+.form-control{
+    margin-left: 200px;
+}
+.input-group{
+    margin-top: 40px;
+}
+.contact-info{
+    color: black;
+    
+}
+

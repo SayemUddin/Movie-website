@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="luxury">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="imj/shopping.png" type="image/x-icon">
+    <!---Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/ee14500060.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header code starts here -->
+    <header>
+        <nav>
+            <div class="navbar bg-neutral">
+                <div class="navbar-start">
+                    <img src="imj/shopping.png" alt="" class="w-10 h-10">
+                    <p><b> Game Store</b></p>
+                </div>
+                <div class="navbar-end">
+                    <ul class="menu menu-horizontal p-2">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#product">Games</a></li>
+                        <li><a href="#review">Review</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+              
+        </nav>
+    </header>
+    <!-- header code ends here -->
+
+    <!-- top section code starts here -->
+    <section class="top-section" id="home">
+        <!-- carousal code starts here -->
+        <div class="carousel w-full">
+            <!-- carousal 1 -->
+            <div id="slide1" class="carousel-item relative w-full d-flex">
+                <!-- product info container-->
+                <div class="carousal-half caro-1-bg">
+                    <div class="mt-20 ml-32 caro-1-text-color">
+                        <h1 class="text-5xl">Super Mario</h1>
+                        <p class="mt-5">Super Mario is a platform game series created by Nintendo starring their mascot, Mario. Alternatively called the Super Mario Bros.Series or simply the Mario series, it is the central series of the greater Mario franchise.
+                                 At least one Super Mario game has been released for every major Nintendo video game console.</p>
+                        <h1 class="text-5xl my-5">$<span id="super-mario">299</span></h1>
+                        <button class="btn" id="mario-btn">Buy Now</button>
+                    </div>
+                </div>
+                <!-- carousal image -->
+                <img src="https://mario.wiki.gallery/images/3/3e/MPSS_Mario.png"
+                    class="carousal-half" />
+                <!-- carousal button -->
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-square">❮</a>
+                    <a href="#slide2" class="btn btn-square">❯</a>
+                </div>
+            </div>
+            <!-- carousal 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="carousal-half caro-2-bg">
+                    <div class="mt-20 ml-32 caro-2-text-color">
+                        <h1 class="text-5xl">GTA V</h1>
+                        <p class="mt-5">
+                            Grand Theft Auto V is an action-adventure game played from either a third-person or first-person perspective. Players complete missions—linear scenarios with set objectives—to progress through the story. Outside of the missions, players may freely roam the open world. Composed of the San Andreas open countryside area, including the fictional Blaine County, and the fictional city of Los Santos, the world is much larger in area than earlier entries in the series.</p>
+                        <h1 class="text-5xl my-5">$<span id="gta-v">109</span></h1>
+                        <button class="btn" id="gta-btn">Buy Now</button>
+                    </div>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png"
+                    class="carousal-half" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-square">❮</a>
+                    <a href="#slide3" class="btn btn-square">❯</a>
+                </div>
+            </div>
+            <!-- carousal 3-->
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="carousal-half caro-3-bg">
+                    <div class="mt-20 ml-32 caro-1-text-color">
+                        <h1 class="text-5xl">Call of Duty</h1>
+                        <p class="mt-5">Call of Duty is a first-person shooter video game franchise published by Activision. Starting out in 2003, it first focused on games set in World War II. Over time, the series has seen games set in the midst of the Cold War, futuristic worlds, and outer space.</p>
+                        <h1 class="text-5xl my-5">$<span id="wild-price">199</span></h1>
+                        <button class="btn" id="wild-btn">Buy Now</button>
+                    </div>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/87/Call_of_Duty_Infinite_Warfare_cover.jpg"
+                    class="carousal-half" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-square">❮</a>
+                    <a href="#slide1" class="btn btn-square">❯</a>
+                </div>
+            </div>
+            
+        <!-- carousal code ends here -->
+    </section>
+    <!-- top section code ends here -->
+
+    <!-- main section code starts here -->
+    <main>
+        <!-- card and cart container code start -->
+        <section class="card-cart grid grid-cols-3 gap-4 my-5" id="product">
+            <!-- card container -->
+            <div class="col-span-2 ml-2">
+                <div class="grid grid-cols-3 gap-4">
+                    <!-- card 1 -->
+                    <div>
+                        <div class="card card-compact w-full bg-neutral shadow-1x
+                        card-height">
+                            <!-- card image -->
+                            <figure><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/f/ff/Assassin%27s_Creed_Valhalla_cover.jpg"
+                                    alt="Shoes" class="card-img" /></figure>
+                            <!-- card product info -->
+                            <div class="card-body">
+                                <h2 class="card-title">Assassin Creed Valhalla</h2>
+                                <p>Assassin's Creed is an open-world action-adventure stealth video game franchise published by Ubisoft.</p>
+                                <p class="text-3xl">$<span id="assassin-price">100</span></p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-primary" id="assassin-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div>
+                        <div class="card card-compact w-full bg-neutral shadow-x1
+                        card-height">
+                            <figure><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/9/9f/Pubgbattlegrounds.png"
+                                    alt="Shoes" class="card-img" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">PUBG</h2>
+                                <p>PUBG: Battlegrounds (previously known as PlayerUnknown's Battlegrounds) is a battle royale game developed and published by PUBG Studios, a subsidiary of Krafton."</p>
+                                <p class="text-3xl">$<span id="pubg-price">199</span></p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-primary" id="pubg-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3-->
+                    <div>
+                        <div class="card card-compact w-full bg-neutral shadow-xl
+                        card-height">
+                            <figure><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/8/80/Street_Fighter_V_box_artwork.png"
+                                    alt="Shoes" class="card-img" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Street Fighter V</h2>
+                                <p>Street Fighter, commonly abbreviated as SF or スト (Suto), is a Japanese media franchise centered on a series of fighting video and arcade games developed and published by Capcom.</p>
+                                <p class="text-3xl">$<span id="street-fighter-price">120</span></p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-primary" id="street-fighter-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div>
+                        <div class="card card-compact w-full bg-neutral shadow-xl
+                        card-height">
+                            <figure><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grid_2019_cover_art.png"
+                                    alt="Shoes" class="card-img" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Grid</h2>
+                                <p>Racing games are a video game genre in which the player participates in a racing competition. </p>
+                                <p class="text-3xl">$<span id="grid-price">99</span></p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-primary" id="grid-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <div>
+                        <div class="card card-compact w-full bg-neutral shadow-xl
+                        card-height">
+                            <figure><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/9/9d/Cover_of_Air_Force_1976.png"
+                                    alt="Shoes" class="card-img" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Airforce</h2>
+                                <p>Air Force is a board wargame published by Battleline Publications in 1976, and subsequently re-released by Avalon Hill in 1977, that simulates air combat during World War II.
+                                </p>
+                                <p class="text-3xl">$<span id="airforce-price">299</span></p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-primary" id="airforce-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <div>
+                        <div class="card card-compact w-full bg-neutral shadow-xl
+                        card-height">
+                            <figure><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/c/c1/Cricket_22_cover_art.png"
+                                    alt="Shoes" class="card-img" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Cricket 22</h2>
+                                <p>Cricket 22 is a 2021 cricket video game developed by Big Ant Studios and published by Nacon. It is the official video game of the cricket.
+                                </p>
+                                <p class="text-3xl">$<span id="cricket-price">110</span></p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-primary" id="cricket-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cart container -->
+            <div class="col-span-1 cart mr-5">
+                <div class="ml-5">
+                    <h1 class="text-5xl text-center mt-5">My cart</h1>
+                    <div class="cart-icon">
+                        <h3 class="text-3xl">Selected games
+                            :<span id="selected-items">0</span>
+                        </h3>
+                    </div>
+                    <p class="text-3xl ">Price:$<span id="product-price">0</span></p>
+                    <p class="text-3xl ">Delivery:$<span id="delivery-price">0</span></p>
+                    <p class="text-3xl ">Shipping:$<span id="shipping-price">0</span></p>
+                    <p class="text-3xl ">Total:$<span id="total-price">0</span></p>
+                    <p class="text-3xl ">Tax:$<span id="tax">0</span></p>
+                    <p class="text-3xl mb-3">Total price with Tax:$<span id="grand-total">0</span></p>
+                    <!-- modal button -->
+                    <label for="my-modal-3" class="btn modal-button btn-primary" id="checkout-btn">Checkout</label>
+                    <!-- modal body code -->
+                    <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+                    <div class="modal">
+                        <div class="modal-box relative text-center">
+                            <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                            <h3 class="text-xl font-bold text-white">Thank you!!!</h3>
+                            <p class="py-4 text-white text-3xl">Total Price:$<span id="modal-total-price">0
+                                </span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- card and cart container code end-->
+
+        <!-- upcoming product section code start-->
+        <section class="my-20">
+            <h1 class="text-5xl text-center mt-10 font-bold">Upcoming Games</h1>
+            <!-- upcoming product cards -->
+            <div class="grid grid-cols-3 gap-4 my-8 mx-4">
+                <!-- card 1 -->
+                <div>
+                    <div class="card card-compact w-full bg-neutral shadow-xl
+                    upcoming-card-height">
+                        <!-- card image -->
+                        <figure><img
+                                src="https://twinfinite.net/wp-content/uploads/2020/10/fifa-22-guide-wiki.jpg"
+                                alt="Shoes" class="" /></figure>
+                        <!-- card product info -->
+                        <div class="card-body">
+                            <h2 class="card-title">Fifa 22</h2>
+                            <p>Best football you can enjoy.</p>
+                            <div class="d-flex items-center">
+                                <div>
+                                    <p class="text-3xl">$<span id="fifa-price">100</span></p>
+                                </div>
+                                <div class="card-actions justify-end">
+                                    <label for="fifa-modal" class="btn modal-button btn-primary"
+                                        id="checkout-btn">Preorder Now</label>
+                                </div>
+                                <input type="checkbox" id="fifa-modal" class="modal-toggle" />
+                                <div class="modal">
+                                    <div class="modal-box relative text-center">
+                                        <label for="fifa-modal"
+                                            class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                                        <h3 class="text-xl font-bold text-white">Thank you
+                                            !!! Order recieved</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div>
+                    <div class="card card-compact w-full bg-neutral shadow-xl
+                    upcoming-card-height">
+                        <figure><img
+                                src="https://pictures.topspeed.com/IMG/png/202204/traffic-bike-racing-5.png"
+                                alt="Shoes" class="" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Top Speed</h2>
+                            <p>Wanna Ride The Thrill !!!!!"</p>
+                            <p class="text-3xl">$<span id="speed-price">200</span></p>
+                            <div class="card-actions justify-end">
+                                <label for="fifa-modal" class="btn modal-button btn-primary" id="checkout-btn">Preorder
+                                    Now</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3-->
+                <div>
+                    <div class="card card-compact w-full bg-neutral shadow-xl
+                    upcoming-card-height">
+                        <figure><img
+                                src="https://uploads.actionvfx.com/file/spina/photo/522/large_Werewolf-low.jpg"
+                                alt="Shoes" class="" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Big Beast 2</h2>
+                            <p>It's comming again.....Run.</p>
+                            <p class="text-3xl">$<span id="big-beast-price">120</span></p>
+                            <div class="card-actions justify-end">
+                                <label for="fifa-modal" class="btn modal-button btn-primary" id="checkout-btn">Preorder
+                                    Now</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div>
+                    <div class="card card-compact w-full bg-neutral shadow-xl
+                    upcoming-card-height">
+                        <figure><img
+                                src="https://charlieintel.com/wp-content/uploads/2018/12/47680649_324589581602422_3886888086541434880_o.jpg"
+                                alt="Shoes" class="" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Call OF Duty-legends</h2>
+                            <p>Hunt for the pros. Its now or never.</p>
+                            <p class="text-3xl">$<span id="callofduty-price">299</span></p>
+                            <div class="card-actions justify-end">
+                                <label for="fifa-modal" class="btn modal-button btn-primary" id="checkout-btn">Preorder
+                                    Now</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div>
+                    <div class="card card-compact w-full bg-neutral shadow-xl
+                    upcoming-card-height">
+                        <figure><img
+                                src="https://m.media-amazon.com/images/I/91mKJLPxkTL._RI_.jpg"
+                                alt="Shoes" class="" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Archer</h2>
+                            <p>Its time to get all...
+                            </p>
+                            <p class="text-3xl">$<span id="archer-price">49</span></p>
+                            <div class="card-actions justify-end">
+                                <label for="fifa-modal" class="btn modal-button btn-primary" id="checkout-btn">Preorder
+                                    Now</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 6 -->
+                <div>
+                    <div class="card card-compact w-full bg-neutral shadow-xl
+                    upcoming-card-height">
+                        <figure><img
+                                src="https://compass-ssl.xbox.com/assets/6a/31/6a31393d-b0cc-4833-8e82-fd3a2c6b6e19.jpg?n=FH4_GLP-Page-Hero-1084_1920x1080_02.jpg"
+                                alt="Shoes" class="" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Forza horizon 4</h2>
+                            <p>Wanna Race Again?? Come get it... 
+                            </p>
+                            <p class="text-3xl">$<span id="forza-price">110</span></p>
+                            <div class="card-actions justify-end">
+                                <label for="fifa-modal" class="btn modal-button btn-primary" id="checkout-btn">Preorder
+                                    Now</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- upcoming product section code end-->
+
+        <!-- product review section code starts here -->
+        <section id="review" class="mx-5 mb-10">
+            <h1 class="text-5xl font-bold text-center">Product review</h1>
+            <div class="carousel w-full mt-5">
+                <!-- carousal 1 -->
+                <div id="slide5" class="carousel-item relative w-full d-flex">
+                    <!-- product info container-->
+                    <div class="review">
+                        <img src="https://image.shutterstock.com/shutterstock/photos/1468439423/display_1500/stock-vector--colorful-logo-of-gamer-boy-with-control-in-hand-1468439423.jpg"
+                            alt="" class="review-img">
+                        <p class="text-center">Gamer Boy</p>
+                        <div class="text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Awesome Game! Super fast service... I love this games. wow... Super-mario is my favourite. Very good price indead... Thanks... </p>
+                    </div>
+                    <div class="review mx-4">
+                        <img src="https://i.pinimg.com/originals/0d/d4/80/0dd480bace398fdec33e091fb866e6ac.png"
+                            alt="" class="review-img">
+                        <p class="text-center">Boomer Levi</p>
+                        <div class="text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>What a service.Love it. one of my best gaming store ever... love it. games are so smooth... and the qualitys are best...keep it up... </p>
+                    </div>
+                    <div class="review">
+                        <img src="https://images.unsplash.com/photo-1564564295391-7f24f26f568b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="" class="review-img">
+                        <p class="text-center">Mdoria</p>
+                        <div class="text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Honestly the service was amazing.. unfortunately I received one it late. the
+                            game was having issues with the sound crackling. I've researched
+                            the issue and found that it's unfortunately games problem.</p>
+                    </div>
+                    <!-- carousal button -->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide7" class="btn btn-squre">❮</a>
+                        <a href="#slide6" class="btn btn-squre">❯</a>
+                    </div>
+                </div>
+                <!-- carousal 2 -->
+                <div id="slide6" class="carousel-item relative w-full">
+                    <div class="review">
+                        <img src="https://i.pinimg.com/originals/9f/87/7c/9f877c2062221ea223eb7c69d7d1bda5.jpg"
+                            alt="" class="review-img">
+                        <p class="text-center">Mikasa </p>
+                        <div class="text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Honestly the service was amazing.. unfortunately I received one it late. the
+                            game was having issues with the sound crackling. I've researched
+                            the issue and found that it's unfortunately games problem.</p>
+                    </div>
+                    <div class="review mx-4">
+                        <img src="https://images.unsplash.com/photo-1564564321441-e96763888581?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="" class="review-img">
+                        <p class="text-center">Naruto</p>
+                        <div class="text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Awesome Game! Super fast service... I love this games. wow... Super-mario is my favourite. Very good price indead... Thanks... </p>
+                    </div>
+                    <div class="review">
+                        <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aHVtYW4lMjBmYWNlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="" class="review-img">
+                        <p class="text-center">Lily</p>
+                        <div class="text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>What a service.Love it. one of my best gaming store ever... love it. games are so smooth... and the qualitys are best...keep it up...</p>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide5" class="btn btn-squre">❮</a>
+                        <a href="#slide7" class="btn btn-squre">❯</a>
+                    </div>
+                </div>
+                <!-- carousal 3-->
+                <div id="slide7" class="carousel-item relative w-full">
+                    <div class="review">
+                        <img src="https://images.unsplash.com/photo-1597155844518-1b4b3daf8269?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGh1bWFuJTIwZmFjZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+                            alt="" class="review-img">
+                        <p class="text-center">Mikasa ackerman</p>
+                        <div class="text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>What a service.Love it. one of my best gaming store ever... love it. games are so smooth... and the qualitys are best...keep it up....</p>
+                    </div>
+                    <div class="review mx-4">
+                        <img src="https://images.unsplash.com/photo-1596419249688-aecfbe1ae6bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGh1bWFuJTIwZmFjZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+                            alt="" class="review-img">
+                        <p class="text-center">Levi</p>
+                        <div class="text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Honestly the service was amazing.. unfortunately I received one it late. the
+                            game was having issues with the sound crackling. I've researched
+                            the issue and found that it's unfortunately games problem.</p>
+                    </div>
+                    <div class="review">
+                        <img src="https://cdn.shopify.com/s/files/1/0249/5884/files/valfre_girl_crus_lily_macpinlac1_1024x1024.JPG?11131726122399532103"
+                            alt="" class="review-img">
+                        <p class="text-center">Milly</p>
+                        <div class="text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Awesome Game! Super fast service... I love this games. wow... Super-mario is my favourite. Very good price indead... Thanks... n</p>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide6" class="btn btn-squre">❮</a>
+                        <a href="#slide5" class="btn btn-squre">❯</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+
+        <!-- contact me section -->
+        <section id="contact" class="caro-1-bg mt-5 font-bold text-center">
+            <h1 class="text-5xl ml-14 caro-1-text-color pt-5">Contact Us</h1>
+            <div class="my-5 ml-5">
+                <span class="contact-info">Name: </span><input type="text" class="input w-full max-w-xs" />
+            </div>
+            <div class="mb-5 ml-5">
+                <span class="contact-info">Email: </span><input type="text" class="input w-full max-w-xs" />
+            </div>
+        
+            <div class="flex justify-center  mb-5 ml-3">
+                <p class="contact-info">Your Message: </p>
+                <textarea class="textarea textarea-ghost ml-5" placeholder="Your Message"
+                    style="height:200px; width:400px;"></textarea>
+            </div>
+            <label for="contact-btn" class="btn modal-button btn-primary mb-10">Submit</label>
+            <input type="checkbox" id="contact-btn" class="modal-toggle" />
+            <div class="modal">
+            <div class="modal-box">
+                <h3 class="font-bold text-2xl text-center text-gold">Thanks for contacting us.</h3>
+                <div class="modal-action">
+                <label for="contact-btn" class="btn">Close</label>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+    <!-- main section code ends here -->
+
+    <!-- footer code -->
+    <footer class="footer p-10 bg-neutral-focus text-base-content">
+       
+        <div>
+            <span class="footer-title">Company</span>
+            <a class="link link-hover"href="">About us</a>
+            <a class="link link-hover"href="#">Contact</a>
+            <a class="link link-hover"href="">Upadte</a>
+            <a class="link link-hover"href="">Super kit</a>
+        </div>
+        <div>
+            <span class="footer-title"href="">Legal</span>
+            <a class="link link-hover"href="">Terms of use</a>
+            <a class="link link-hover"href="">Privacy policy</a>
+            <a class="link link-hover"href="">Cookie policy</a>
+        </div>
+    </footer>
+    <footer class="footer px-10 py-4 border-t bg-neutral text-base-content border-base-100">
+        <div class="items-center grid-flow-col">
+            <img src="imj/shopping.png" alt="" width="60" height="60">
+            <p>Game store <br>Since 2000</p>
+        </div>
+        <p class="text-xl">&copy;Md Tohedur Rahaman Khan</p>
+        <div class="md:place-self-center md:justify-self-end">
+            <div class="grid grid-flow-col gap-4">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                        </path>
+                    </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                    </svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- my js -->
+    <script src="app.js"></script>
+</body>
+</html>
